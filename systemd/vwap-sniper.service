@@ -1,0 +1,17 @@
+[Unit]
+Description=Q-VWAP Trader
+After=network.target
+
+[Service]
+Type=simple
+User=sniper
+WorkingDirectory=/home/sniper/q_vwap_trader
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/sniper/q_vwap_trader/venv/bin/python main.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/sniper/q_vwap_trader/bot.log
+StandardError=append:/home/sniper/q_vwap_trader/bot.log
+
+[Install]
+WantedBy=multi-user.target

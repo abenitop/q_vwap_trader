@@ -1,0 +1,12 @@
+symbols:
+  - BTCUSDT
+  - ETHUSDT
+timeframe: "5"
+risk_per_trade: 0.02
+max_position_pct: 0.10
+vwap_model: "anchored"
+vwap_reset_hours: 24
+vwap_rolling_window: 90
+optimization_interval_hours: 4
+min_trades_for_validation: 100
+monte_carlo_iterations: 1000

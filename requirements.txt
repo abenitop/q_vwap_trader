@@ -1,0 +1,6 @@
+python-dotenv
+pybit
+pandas
+numpy
+numba
+pyyaml
